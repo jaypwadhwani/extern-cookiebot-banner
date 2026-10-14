@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cookiebot banner: after merge</title>
+<style>
+:root{--ink:#1c1b1b;--muted:#5f5e5e;--line:#e5e2e1;--blue:#2853d2}
+body{margin:0;font-family:Inter,-apple-system,system-ui,sans-serif;color:var(--ink);background:#f6f5f4;padding:16px}
+.wrap{max-width:1180px;margin:0 auto}
+h1{font-size:24px;margin:8px 0 4px}p{margin:0 0 14px;color:var(--muted);font-size:14px;line-height:1.5}
+h2{font-size:17px;margin:26px 0 8px}
+.row{display:flex;gap:16px;flex-wrap:wrap;align-items:flex-start}
+figure{margin:0;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px;flex:1 1 300px;min-width:0}
+figure img{display:block;width:100%;height:auto;border-radius:6px}
+figcaption{font-size:12px;color:var(--muted);margin-top:8px}
+.phone{flex:0 1 330px}
+a{color:var(--blue)}
+.tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:99px;background:#e8edff;color:var(--blue);margin-left:6px;vertical-align:middle}
+</style></head><body><div class="wrap">
+<h1>Cookiebot banner on the homepage, after merge</h1>
+<p>Real renders of www.extern.com with the code from extern-website PR #78 applied, captured Oct 14. Not a mock. The Webflow pages (for example <a href="https://www.extern.com/privacy-policy">extern.com/privacy-policy</a>) already show this live. The homepage and the app switch when PR #78 and extern-front-end #3174 merge.</p>
+
+<h2>After <span class="tag">PR #78</span></h2>
+<div class="row">
+  <figure><img src="img/after_d.png" alt="Desktop homepage with the new banner"><figcaption>Desktop 1440. Bar height 72px, was 166. Extern logo, one sentence, Manage / Decline / Accept. "Do Not Sell" link hidden outside California.</figcaption></figure>
+  <figure class="phone"><img src="img/after_m.png" alt="Phone homepage with the new banner"><figcaption>Phone 390. Sheet height 207px of 844 (24%), was 376 (45%).</figcaption></figure>
+  <figure class="phone"><img src="img/after_m_ca.png" alt="Phone homepage, California visitor"><figcaption>Phone 390, California visitor. Same banner plus the "Do Not Sell or Share My Personal Information" link, 231px.</figcaption></figure>
+</div>
+
+<h2>Before, for comparison (homepage today)</h2>
+<div class="row">
+  <figure><img src="img/before_d.jpg" alt="Desktop homepage today"><figcaption>Desktop today: 166px, Cookiebot wordmark, "Allow all", links stacked.</figcaption></figure>
+  <figure class="phone"><img src="img/before_m.jpg" alt="Phone homepage today"><figcaption>Phone today: 376px, 45% of the screen.</figcaption></figure>
+</div>
+<p style="margin-top:22px">Options page with the design history: <a href="./">index</a>.</p>
+</div></body></html>
