@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cookiebot Banner Options</title>
+<title>Cookiebot banner: final</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
 <style>
@@ -70,6 +70,7 @@ ul.notes li b{font-weight:600}
 /* desktop placements (frame 1440x900) */
 .d .bar{left:0;right:0;bottom:0;padding:18px 48px;display:flex;align-items:center;gap:28px;border-top:1px solid var(--line)}
 .d .bar .t{flex:1;max-width:820px}
+.d .bar .wm{margin:0;font-size:18px;white-space:nowrap}
 .d .card{left:32px;bottom:32px;width:400px;padding:20px 22px;border-radius:20px;border:1px solid var(--line);box-shadow:0 10px 36px rgba(28,27,27,.16)}
 .d .card.right{left:auto;right:32px}
 .d .card .acts{margin-top:14px;justify-content:flex-end}
@@ -85,18 +86,18 @@ ul.notes li b{font-weight:600}
 <div class="wrap">
 
 <header class="top">
-  <h1>Cookiebot banner: 3 finalists</h1>
-  <p>Narrowed from ten after Vinny's review on Oct 13. Each finalist is drawn to scale on the live Extern homepage (captured Oct 13, quiz arm) at desktop 1440px and phone 390px. All three now use Vinny's pattern: the Cookie policy link inside the sentence, and three buttons from low to high emphasis (Manage, Decline, Accept).</p>
-  <div class="meta"><span>Prepared by <b>Jay</b> for Matt, Dishita and Vinny U.</span><span>Review by <b>Thu Oct 15</b></span></div>
+  <h1>Cookiebot banner: final for approval</h1>
+  <p>One option left after Vinny's and Dishita's reviews on Oct 13. Drawn to scale on the live Extern homepage (captured Oct 13, quiz arm) at desktop 1440px and phone 390px. Dashboard audited Oct 14: we are on Cookiebot Premium, the layout is already a bottom bar, and every change below is a dashboard field, not code.</p>
+  <div class="meta"><span>Prepared by <b>Jay</b> for Matt. Reviewed by Dishita and Vinny U.</span><span>Approval by <b>Thu Oct 15</b></span></div>
   <nav class="toc">
-    <a href="#today">Today</a><a href="#o1">1 Minimal bar</a><a href="#o2">2 Compact card</a><a href="#o3">3 Plain English</a><a href="#common">What's common to all</a><a href="#notes">CCPA and SOC 2 notes</a>
+    <a href="#today">Today</a><a href="#final">The final</a><a href="#changes">What changes</a><a href="#notes">CCPA and SOC 2 notes</a>
   </nav>
   <div class="decide">
-    <h2>Still to decide</h2>
+    <h2>What Matt is approving</h2>
     <ol>
-      <li>Which of the three ships first.</li>
-      <li>Desktop corner for the card options: bottom-left or bottom-right. Both shown below. On the quiz homepage at 1440x900 neither covers a CTA; left covers the "Get experience" label, right covers the end of the brand logos.</li>
-      <li>Logo removal: plan setting or plan upgrade. Dishita is checking.</li>
+      <li>The copy on the bar, as shown below.</li>
+      <li>"Do not sell or share my personal information" leaves the banner for non-California visitors and becomes a footer link.</li>
+      <li>The Cookiebot logo comes off and the Extern wordmark goes on.</li>
     </ol>
   </div>
 </header>
@@ -109,92 +110,46 @@ ul.notes li b{font-weight:600}
     <div><div class="fw phone" data-w="390" data-h="844" data-s="0.75"><div class="inner"><img src="img/m_current.jpg" alt="Current phone banner"></div></div><p class="cap">Phone 390. Banner height 376 of 844px. "Do not sell or share" is the decline button.</p></div>
   </div>
   <ul class="notes">
-    <li><b>The decline button is literally</b> "Do not sell or share my personal information." That is Cookiebot's CCPA mode applied to every region.</li>
-    <li><b>Four elements compete</b> on the first layer: title, paragraph, CCPA link, Show details, Allow all, plus the vendor logo.</li>
+    <li><b>Why it says "Do not sell or share":</b> the dashboard has the California button type ("Do not sell or share, opt-in") set with Territory = All visitors. Everyone on earth gets the California wording.</li>
+    <li><b>Why the logo is there:</b> "Display logo on banner" is ticked and the donut illustration is an uploaded jpg.</li>
     <li><b>Generic copy:</b> "enhance your browsing experience" says nothing about Extern.</li>
     <li><b>Covers the quiz CTA</b> on the phone. The thing the page exists to do sits under the banner.</li>
   </ul>
 </section>
 
-<!-- 1 -->
-<section class="opt" id="o1">
-  <div class="head"><span class="num">Option 1</span><h2>Minimal bar</h2><span class="tag">Recommended starting point</span></div>
+<!-- FINAL -->
+<section class="opt" id="final">
+  <div class="head"><span class="num">Final</span><h2>Minimal bar with the Extern wordmark</h2><span class="tag">Dishita's pick, Vinny's button pattern</span></div>
   <div class="frames">
     <div><div class="fw d" data-w="1440" data-h="900" data-s="0.5"><div class="inner"><img src="img/d_clean.jpg" alt="">
-      <div class="cb bar"><p class="t">Extern uses cookies to understand how people use the site and to measure our ads. If you decline, nothing is shared with analytics or ad partners. <u>Cookie policy</u></p><div class="acts"><button class="btn ghost">Manage</button><button class="btn sec">Decline</button><button class="btn pri">Accept</button></div></div>
-    </div></div><p class="cap">Desktop: slim full-width bar, about 80px.</p></div>
+      <div class="cb bar"><div class="wm">extern<i>.</i></div><p class="t">We use cookies to understand how our site is used and to measure our advertising. You can choose which cookies to allow. <u>Cookie policy</u></p><div class="acts"><button class="btn ghost">Manage</button><button class="btn sec">Decline</button><button class="btn pri">Accept</button></div></div>
+    </div></div><p class="cap">Desktop: slim full-width bar, about 80px. Same layout slot the current banner uses.</p></div>
     <div><div class="fw phone m" data-w="390" data-h="844" data-s="0.75"><div class="inner"><img src="img/m_clean.jpg" alt="">
-      <div class="cb sheet"><p class="t">Extern uses cookies to understand how people use the site and to measure our ads. If you decline, nothing is shared with analytics or ad partners. <u>Cookie policy</u></p><div class="acts"><button class="btn ghost">Manage</button><button class="btn sec">Decline</button><button class="btn pri">Accept</button></div></div>
-    </div></div><p class="cap">Phone: bottom sheet, about 20% of the screen.</p></div>
+      <div class="cb sheet"><div class="wm">extern<i>.</i></div><p class="t">We use cookies to understand how our site is used and to measure our advertising. You can choose which cookies to allow. <u>Cookie policy</u></p><div class="acts"><button class="btn ghost">Manage</button><button class="btn sec">Decline</button><button class="btn pri">Accept</button></div></div>
+    </div></div><p class="cap">Phone: bottom sheet, about 22% of the screen. Quiz CTA stays visible.</p></div>
   </div>
   <ul class="notes">
-    <li><b>Copy says only what the banner controls:</b> site analytics and ad measurement. The decline line is true: first-party capture continues, nothing is shared.</li>
+    <li><b>Copy (Dishita's draft, one trim):</b> neutral, names the two things the cookies do, no line about partners. "Improve your experience" was cut because it is the one phrase on every banner and not what these cookies do.</li>
     <li><b>Button ladder (Vinny):</b> Manage as text, Decline outlined, Accept filled. Decline stays the same height and one click, which keeps California's symmetry rule.</li>
-    <li><b>Policy link inside the sentence</b> instead of a links row. Saves a line on phone.</li>
-    <li><b>Build:</b> Cookiebot dashboard copy change plus a custom CSS block. No app release.</li>
+    <li><b>Policy link inside the sentence.</b> The dashboard body field supports links, so this needs no code.</li>
+    <li><b>Wordmark instead of their logo.</b> Answers "we're advertising for Cookiebot" directly. Light theme, matching the site.</li>
   </ul>
 </section>
 
-<!-- 2 -->
-<section class="opt" id="o2">
-  <div class="head"><span class="num">Option 2</span><h2>Compact card with the Extern wordmark</h2></div>
-  <div class="frames">
-    <div><div class="fw d" data-w="1440" data-h="900" data-s="0.5"><div class="inner"><img src="img/d_clean.jpg" alt="">
-      <div class="cb card"><div class="wm">extern<i>.</i></div><p class="t">We use cookies to see what helps students and to measure our ads. If you decline, nothing is shared with analytics or ad partners. <u>Cookie policy</u></p><div class="acts"><button class="btn ghost">Manage</button><button class="btn sec">Decline</button><button class="btn pri">Accept</button></div></div>
-    </div></div><p class="cap">Desktop, bottom-left: covers the "Get experience with top brands" label.</p></div>
-    <div><div class="fw phone m" data-w="390" data-h="844" data-s="0.75"><div class="inner"><img src="img/m_clean.jpg" alt="">
-      <div class="cb sheet"><div class="wm">extern<i>.</i></div><p class="t">We use cookies to see what helps students and to measure our ads. If you decline, nothing is shared with analytics or ad partners. <u>Cookie policy</u></p><div class="acts"><button class="btn ghost">Manage</button><button class="btn sec">Decline</button><button class="btn pri">Accept</button></div></div>
-    </div></div><p class="cap">Phone: bottom sheet, about 23% of the screen.</p></div>
-  </div>
-  <div class="frames">
-    <div><div class="fw d" data-w="1440" data-h="900" data-s="0.5"><div class="inner"><img src="img/d_clean.jpg" alt="">
-      <div class="cb card right"><div class="wm">extern<i>.</i></div><p class="t">We use cookies to see what helps students and to measure our ads. If you decline, nothing is shared with analytics or ad partners. <u>Cookie policy</u></p><div class="acts"><button class="btn ghost">Manage</button><button class="btn sec">Decline</button><button class="btn pri">Accept</button></div></div>
-    </div></div><p class="cap">Desktop, bottom-right (Vinny's suggestion): sits just under the quiz's Continue button and covers the end of the brand logos.</p></div>
-  </div>
-  <ul class="notes">
-    <li><b>Our mark instead of theirs.</b> Answers Matt's "we're advertising for Cookiebot" directly.</li>
-    <li><b>Card, not bar, on desktop.</b> Reads as part of the site. Leaves the hero and nav untouched.</li>
-    <li><b>Corner is the open call.</b> Left covers a label and sits where text starts. Right covers the logo row's end and keeps left-aligned content clear. Neither touches a CTA on this page.</li>
-    <li><b>Slightly taller on phone</b> than Option 1 because of the wordmark line.</li>
-  </ul>
-</section>
-
-<!-- 3 (was 5) -->
-<section class="opt" id="o3">
-  <div class="head"><span class="num">Option 3</span><h2>Plain English, what each button does</h2></div>
-  <div class="frames">
-    <div><div class="fw d" data-w="1440" data-h="900" data-s="0.5"><div class="inner"><img src="img/d_clean.jpg" alt="">
-      <div class="cb card"><p class="h">Cookies on Extern</p><p class="t">Accept lets us see how the site is used and measure our ads. Decline means nothing is shared with analytics or ad partners. <u>Cookie policy</u></p><div class="acts"><button class="btn ghost">Manage</button><button class="btn sec">Decline</button><button class="btn pri">Accept</button></div></div>
-    </div></div><p class="cap">Desktop, bottom-left.</p></div>
-    <div><div class="fw phone m" data-w="390" data-h="844" data-s="0.75"><div class="inner"><img src="img/m_clean.jpg" alt="">
-      <div class="cb sheet"><p class="h">Cookies on Extern</p><p class="t">Accept lets us see how the site is used and measure our ads. Decline means nothing is shared with analytics or ad partners. <u>Cookie policy</u></p><div class="acts"><button class="btn ghost">Manage</button><button class="btn sec">Decline</button><button class="btn pri">Accept</button></div></div>
-    </div></div><p class="cap">Phone: about 24% of the screen.</p></div>
-  </div>
-  <div class="frames">
-    <div><div class="fw d" data-w="1440" data-h="900" data-s="0.5"><div class="inner"><img src="img/d_clean.jpg" alt="">
-      <div class="cb card right"><p class="h">Cookies on Extern</p><p class="t">Accept lets us see how the site is used and measure our ads. Decline means nothing is shared with analytics or ad partners. <u>Cookie policy</u></p><div class="acts"><button class="btn ghost">Manage</button><button class="btn sec">Decline</button><button class="btn pri">Accept</button></div></div>
-    </div></div><p class="cap">Desktop, bottom-right.</p></div>
-  </div>
-  <ul class="notes">
-    <li><b>Each button's consequence is in the sentence.</b> Two sentences, no bullets (Vinny's note).</li>
-    <li><b>Strongest disclosure</b> of the three. Easiest to defend if counsel asks what the user was told.</li>
-    <li><b>Tallest on phone</b> because of the heading. Still about half of today.</li>
-    <li><b>Good pick</b> if Matt wants more words, not fewer.</li>
-  </ul>
-</section>
-
-<!-- COMMON -->
-<section class="common" id="common">
-  <h2>What's common to all three</h2>
+<!-- CHANGES -->
+<section class="common" id="changes">
+  <h2>What changes, field by field (Cookiebot dashboard, Domain Group #1)</h2>
   <ul>
-    <li><b>"Do not sell or share my personal information" leaves the banner.</b> It becomes a footer link on www and app and shows only to California visitors. That is where the law requires it. It never needed to be the decline button for everyone.</li>
-    <li><b>Decline and Accept on the first layer, same height, one click each.</b> This keeps the consent log Matt committed to (our own record, four-year retention) and meets California's rule that saying no is as easy as saying yes. Manage is a text button because it is not a consent choice.</li>
-    <li><b>No Cookiebot logo.</b> Plan setting or CSS. Dishita is checking the tier.</li>
-    <li><b>Copy only describes what the banner controls.</b> Nothing about partners, personalization or server-side forwarding. That was Matt's rule in August.</li>
-    <li><b>Manage</b> opens Cookiebot's existing details layer. Granular control is not removed, just moved off the first screen.</li>
-    <li><b>Global Privacy Control honored</b> in the Cookiebot settings.</li>
-    <li><b>How it ships:</b> Cookiebot dashboard (copy, region settings, template) plus a custom CSS block on the Webflow site and the app. No app release for the dashboard parts.</li>
-    <li><b>What this does not fix:</b> the Cookiebot script itself renders about 1.5 seconds after it loads and blocks hydration on the landing pages. That is an engineering item for Michael.</li>
+    <li><b>Design, Compliance, Territory:</b> All visitors becomes California only for the "Do not sell or share (opt-in)" type. Everyone else gets Multi Level (Accept, Decline, Manage). The dashboard supports state-level territory on Premium.</li>
+    <li><b>Design, Logo:</b> replace the uploaded donut jpg with the Extern wordmark png. If the slot renders it too large, untick "Display logo on banner" and the wordmark goes in the body text instead.</li>
+    <li><b>Design, Layout:</b> no change. Bar, Bottom, no style effect is already set.</li>
+    <li><b>Content, Dialog heading:</b> cleared.</li>
+    <li><b>Content, Dialog body text:</b> the sentence above, with Cookie policy linked to the cookie declaration page.</li>
+    <li><b>Content, buttons:</b> Allow all becomes Accept. Deny becomes Decline. Allow selection becomes Manage. The "Do not sell or share" field stays as is for California.</li>
+    <li><b>Custom CSS on www and app:</b> hide the "Cookiebot by Usercentrics" wordmark (Cookiebot's own documented selector), set the button order and emphasis. Small PR each, reviewed by Mateus or Vinny Marques.</li>
+    <li><b>Footer link on www and app:</b> "Do Not Sell or Share My Personal Information", opens the Cookiebot preferences layer. Shown to everyone, since a footer link is cheap and the law only cares that California sees it.</li>
+    <li><b>Order:</b> footer link and CSS go live first. Dashboard changes after, at a quiet hour, in one sitting. Dev sites are aliases on the same domain group, so there is no staging and saving publishes to production.</li>
+    <li><b>What this does not fix:</b> the Cookiebot script itself delays hydration on the landing pages. That is PR #3170 and website #76, waiting on Michael.</li>
     <li><b>How we'll know it worked:</b> accept, decline and no-interaction rates before and after, from the nightly consent check. Matt's target is non-interaction from about 60% toward 25%.</li>
   </ul>
 </section>
@@ -202,16 +157,16 @@ ul.notes li b{font-weight:600}
 <section class="common" id="notes">
   <h2>CCPA and SOC 2 notes (for Matt's approval)</h2>
   <ul>
-    <li><b>CCPA is opt-out, not opt-in.</b> It never required a banner. Our affirmative-accept standard goes beyond it, so none of the three is at risk on copy or layout. The two things it does require: the "Do Not Sell or Share" link on the homepage (moving to the footer, California only) and honoring Global Privacy Control. Both must be in place before the phrase leaves the banner.</li>
-    <li><b>Symmetry rule.</b> California's dark-pattern rules require declining to be as easy as accepting. All three keep Decline and Accept the same height on the first layer, one click each.</li>
-    <li><b>Decline line is accurate.</b> "Nothing is shared with analytics or ad partners" is true for decliners. First-party capture to our own warehouse continues by design, and the line does not claim otherwise.</li>
-    <li><b>SOC 2: the wording is not a control, the change is.</b> This is a production change to a privacy control made in a vendor dashboard. Matt's written approval is the change record. Before-and-after screenshots get filed in Thoropass.</li>
+    <li><b>CCPA is opt-out, not opt-in.</b> It never required a banner. Our affirmative-accept standard goes beyond it, so the copy and layout carry no risk. The two things it does require: the "Do Not Sell or Share" link on the homepage (moving to the footer) and honoring Global Privacy Control. Both must be in place before the phrase leaves the banner. GPC was not found on the Design tab; it is on the Privacy tab or in Legislation presets and gets verified on ship day.</li>
+    <li><b>Symmetry rule.</b> California's dark-pattern rules require declining to be as easy as accepting. Decline and Accept stay the same height on the first layer, one click each.</li>
+    <li><b>Nothing fires before a click.</b> The dashboard type is "opt-in", the consent method is Explicit Consent, and that stays. Our own gate and the backend already require an affirmative Accept before anything forwards.</li>
+    <li><b>SOC 2: the wording is not a control, the change is.</b> This is a production change to a privacy control made in a vendor dashboard. Matt's written approval is the change record. Dashboard screenshots from Oct 14 are the "before"; the same pages after saving are the "after". Both get filed in Thoropass.</li>
     <li><b>Consent log unchanged.</b> Accept and decline stay the recorded Cookiebot events, kept four years per the retention schedule. The privacy policy stays accurate with the footer link. Cookiebot stays in the vendor inventory. Rodolfo's nightly consent-gate check keeps running and gives the before-and-after consent rates.</li>
-    <li><b>Separate open item, not the banner:</b> the Google Ads offline conversion import sends paid subscribers' email and name daily with no consent check. Michael flagged it Oct 8. Needs fixing under the same standard regardless of which banner wins.</li>
+    <li><b>Separate open item, not the banner:</b> the Google Ads offline conversion import sends paid subscribers' email and name daily with no consent check. Michael flagged it Oct 8. Needs fixing under the same standard regardless of the banner.</li>
   </ul>
 </section>
 
-<p class="retired">Retired after review on Oct 13: one-liner, question-led, corner toast, top strip (cuts the page), Extern voice (needed counsel), three choices (same as Option 1 with a third button), soft entry (contrast only).</p>
+<p class="retired">Retired after review on Oct 13: compact card (Dishita preferred the bar: more noticeable, less space on mobile), plain English two-sentence version, one-liner, question-led, corner toast, top strip, Extern voice, three choices, soft entry.</p>
 
 </div>
 <script>
